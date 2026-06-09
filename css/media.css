@@ -587,6 +587,88 @@
   .footer__privacy {
     font-size: 12px;
   }
+
+  /* popup-order */
+  .order-popup__close svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .order-popup__close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .order-popup__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .order-popup__sublabel {
+      font-size: 18px;
+      margin-bottom: 15px;
+  }
+
+  .order-popup__form, .order-popup__form-row {
+    gap: 10px;
+  }
+
+  .order-popup__content {
+    padding: 60px 100px 60px 60px;
+    width: 100%;
+  }
+
+  .order-popup__input {
+    width: 100%;
+    font-size: 14px;
+    padding: 13px 15px;
+  }
+
+  .order-popup__input::placeholder {
+    font-size: 14px;
+  }
+
+  .order-popup__form {
+    margin-bottom: 30px;
+  }
+
+  .order-popup__methods {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .order-popup__submit {
+    font-size: 13px;
+    padding: 15px 15px 15px 20px;
+  }
+
+  .order-popup__method-text {
+    font-size: 13px;
+  }
+
+  .order-popup__method--bottom {
+    min-width: 180px;
+    height: 60px;
+    gap: 15px;
+  }
+
+  .order-popup__method--top {
+    min-width: 120px;
+    height: 50px;
+    min-height: 50px;
+  }
+
+  .order-popup__method--paypal svg {
+    width: 60px;
+  }
+
+  .order-popup__method--gpay svg {
+    width: 50px;
+  }
+
+  .order-popup__method--bonifico svg {
+    width: 60px;
+  }
 }
 
 @media (max-width: 1210px) {
@@ -612,6 +694,67 @@
 
   .freshness__top {
     gap: 80px;
+  }
+
+  /* order popup: centered fade-in modal */
+  .order-popup__panel {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: auto;
+    border-radius: 5px;
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    justify-content: flex-start;
+  }
+
+  .order-popup.is-open .order-popup__panel {
+    opacity: 1;
+    transform: none;
+  }
+
+  .order-popup__close {
+    top: 25px;
+    right: 25px;
+  }
+
+  .order-popup__content {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .order-popup__title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .order-popup__form {
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+
+  .order-popup__form-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .order-popup__input--nome {
+    flex: 0 0 100%;
+  }
+
+  .order-popup__input--date {
+    flex: 1;
+  }
+
+  .order-popup__input--cvv {
+    flex: 1;
+    max-width: none;
+  }
+
+  .order-popup__methods {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
   }
 }
 
@@ -1386,4 +1529,52 @@
   .mob-menu__contact-label {
   font-size: 11px;
   }
+
+  /* popup-order */
+
+  .order-popup__close svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .order-popup__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .order-popup__sublabel {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .order-popup__input {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+
+  .order-popup__content {
+    padding: 80px 30px 80px 30px;
+  }
+
+  .order-popup__method--bottom {
+    min-width: 120px;
+    height: 50px;
+    min-height: 50px;
+    gap: 4px;
+  }
+
+  .order-popup__method-text {
+    font-size: 12px;
+    line-height: 100%;
+    max-width: 60px;
+  }
+
+  .order-popup__method--paypal svg {
+    width: 80px;
+  }
+
+  .order-popup__method--bottom svg {
+    width: 17px;
+  }
+
 }

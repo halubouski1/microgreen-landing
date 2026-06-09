@@ -124,6 +124,44 @@ mobClose.addEventListener('click', function() {
   goTo(1);
 })();
 
+// ========================================
+// Order Popup
+// ========================================
+(function() {
+  var popup = document.getElementById('orderPopup');
+  var trigger = document.querySelector('.hero__btn-primary');
+  var closeBtn = document.getElementById('orderClose');
+  var overlay = document.getElementById('orderOverlay');
+
+  function openPopup(e) {
+    e.preventDefault();
+    popup.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    popup.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  trigger.addEventListener('click', openPopup);
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePopup();
+  });
+
+  document.querySelectorAll('.order-popup__method').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.order-popup__method').forEach(function(b) {
+        b.classList.remove('order-popup__method--active');
+      });
+      btn.classList.add('order-popup__method--active');
+    });
+  });
+})();
+
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   anchor.addEventListener('click', function(e) {
     var target = anchor.getAttribute('href');
