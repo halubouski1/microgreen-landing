@@ -1577,4 +1577,8 @@
     width: 17px;
   }
 
+  .order-popup__input--cvv {
+    max-width: 90px;
+  }
+
 }
