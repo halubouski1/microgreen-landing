@@ -722,6 +722,34 @@
   </div>
 </div>
 
+<!-- Consult Popup -->
+<div class="consult-popup" id="consultPopup">
+  <div class="consult-popup__overlay" id="consultOverlay"></div>
+  <div class="consult-popup__panel">
+    <button class="consult-popup__close" id="consultClose">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.30213 15.5C0.968571 15.5 0.635009 15.3734 0.381578 15.1181C-0.127193 14.6094 -0.127193 13.7845 0.381578 13.2758L13.2757 0.38157C13.7848 -0.12719 14.6097 -0.12719 15.1184 0.38157C15.6272 0.890329 15.6272 1.71516 15.1184 2.22423L2.22396 15.1181C1.96703 15.3734 1.63379 15.5 1.30213 15.5Z" fill="#7B7B7B"/>
+        <path d="M14.1961 15.5C13.8628 15.5 13.5293 15.3734 13.2758 15.1181L0.381812 2.22439C-0.127271 1.71558 -0.127271 0.890664 0.381812 0.381849C0.890577 -0.127283 1.71541 -0.127283 2.22418 0.381849L15.1182 13.2771C15.6273 13.7859 15.6273 14.6108 15.1182 15.1197C14.8632 15.3734 14.5296 15.5 14.1961 15.5Z" fill="#7B7B7B"/>
+      </svg>
+    </button>
+    <h2 class="consult-popup__title">Lascia una richiesta di consulenza</h2>
+    <form class="consult-popup__form" onsubmit="return false">
+      <div class="consult-popup__row">
+        <input type="text" class="consult-popup__input" placeholder="Nome">
+        <input type="tel" class="consult-popup__input" placeholder="+393 884 013 999">
+      </div>
+      <input type="email" class="consult-popup__input" placeholder="microgree@gmail.com">
+      <button type="submit" class="consult-popup__submit">
+        Ordina qui
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1667 0.5V5.16667C11.1667 5.87391 10.8857 6.55219 10.3856 7.05229C9.88552 7.55238 9.20724 7.83333 8.5 7.83333H0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.83333 4.5L0.5 7.83333L3.83333 11.1667" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </button>
+    </form>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="js/main.js"></script>
 </body>

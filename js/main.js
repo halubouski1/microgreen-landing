@@ -162,6 +162,35 @@ mobClose.addEventListener('click', function() {
   });
 })();
 
+// ========================================
+// Consult Popup
+// ========================================
+(function() {
+  var popup = document.getElementById('consultPopup');
+  var trigger = document.querySelector('.hero__btn-secondary');
+  var closeBtn = document.getElementById('consultClose');
+  var overlay = document.getElementById('consultOverlay');
+
+  function openPopup(e) {
+    e.preventDefault();
+    popup.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    popup.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  trigger.addEventListener('click', openPopup);
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePopup();
+  });
+})();
+
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   anchor.addEventListener('click', function(e) {
     var target = anchor.getAttribute('href');

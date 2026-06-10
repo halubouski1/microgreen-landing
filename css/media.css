@@ -669,6 +669,33 @@
   .order-popup__method--bonifico svg {
     width: 60px;
   }
+
+  /* popup-consult */
+  .consult-popup__panel {
+    padding: 60px 50px;
+    max-width: 800px;
+    margin: 24px;
+  }
+
+  .consult-popup__title {
+    font-size: 50px;
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .consult-popup__input {
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+
+  .consult-popup__input::placeholder {
+    font-size: 13px;
+  }
+
+  .consult-popup__submit {
+    font-size: 13px;
+    padding: 15px 17px 15px 20px;
+  }
 }
 
 @media (max-width: 1210px) {
@@ -1581,4 +1608,44 @@
     max-width: 90px;
   }
 
+    /* popup-consult */
+  .consult-popup__panel {
+    padding: 50px 30px 100px 30px;
+    max-width: 800px;
+    margin: 20px;
+  }
+
+  .consult-popup__title {
+    font-size: 35px;
+    max-width: 190px;
+  }
+
+  .consult-popup__input {
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+
+  .consult-popup__input::placeholder {
+    font-size: 13px;
+  }
+
+  .consult-popup__submit {
+    font-size: 13px;
+    padding: 15px 17px 15px 20px;
+  }
+
+  .consult-popup__close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .consult-popup__row {
+    flex-direction: column;
+  }
+
+  .consult-popup__submit {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
 }

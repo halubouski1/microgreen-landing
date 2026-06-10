@@ -1277,6 +1277,145 @@ button {
   background: #5c7955;
 }
 
+/* ===== Consult Popup ===== */
+
+.consult-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 0s 0.4s;
+}
+
+.consult-popup.is-open {
+  visibility: visible;
+  pointer-events: auto;
+  transition: visibility 0s 0s;
+}
+
+.consult-popup__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.consult-popup.is-open .consult-popup__overlay {
+  opacity: 1;
+}
+
+.consult-popup__panel {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  padding: 120px 100px;
+  width: 100%;
+  max-width: 1037px;
+  max-height: 90vh;
+  overflow-y: auto;
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.consult-popup.is-open .consult-popup__panel {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.consult-popup__close {
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.consult-popup__title {
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  background: linear-gradient(360deg, #6e8d65 0%, #20271c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 60px;
+  max-width: 650px;
+}
+
+.consult-popup__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 508px;
+}
+
+.consult-popup__row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.consult-popup__row .consult-popup__input {
+  flex: 1;
+  min-width: 0;
+}
+
+.consult-popup__input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 18px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(62, 62, 62, 0.35);
+  outline: none;
+}
+
+.consult-popup__input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: rgba(62, 62, 62, 0.35);
+}
+
+.consult-popup__input:focus {
+  border-color: #6E8D65;
+}
+
+.consult-popup__submit {
+  display: inline-flex;
+  align-items: center;
+  background: #6E8D65;
+  border-radius: 5px;
+  padding: 18px 21px 18px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 20px;
+  gap: 120px;
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.consult-popup__submit:hover {
+  background: #5c7955;
+}
+
 /* ===== Mobile CTA ===== */
 
 .mobile-cta {
