@@ -37,6 +37,13 @@ mobClose.addEventListener('click', function() {
   document.body.style.overflow = '';
 });
 
+document.querySelectorAll('.mob-menu__link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    mobMenu.classList.remove('is-open');
+    document.body.style.overflow = '';
+  });
+});
+
 // ========================================
 // Products mobile pagination
 // ========================================
@@ -129,7 +136,6 @@ mobClose.addEventListener('click', function() {
 // ========================================
 (function() {
   var popup = document.getElementById('orderPopup');
-  var trigger = document.querySelector('.hero__btn-primary');
   var closeBtn = document.getElementById('orderClose');
   var overlay = document.getElementById('orderOverlay');
 
@@ -144,7 +150,9 @@ mobClose.addEventListener('click', function() {
     document.body.style.overflow = '';
   }
 
-  trigger.addEventListener('click', openPopup);
+  document.querySelectorAll('.product-card__btn').forEach(function(btn) {
+    btn.addEventListener('click', openPopup);
+  });
   closeBtn.addEventListener('click', closePopup);
   overlay.addEventListener('click', closePopup);
 
@@ -167,7 +175,7 @@ mobClose.addEventListener('click', function() {
 // ========================================
 (function() {
   var popup = document.getElementById('consultPopup');
-  var trigger = document.querySelector('.hero__btn-secondary');
+  var triggers = document.querySelectorAll('.js-consult-trigger, .js-order-trigger');
   var closeBtn = document.getElementById('consultClose');
   var overlay = document.getElementById('consultOverlay');
 
@@ -182,7 +190,9 @@ mobClose.addEventListener('click', function() {
     document.body.style.overflow = '';
   }
 
-  trigger.addEventListener('click', openPopup);
+  triggers.forEach(function(btn) {
+    btn.addEventListener('click', openPopup);
+  });
   closeBtn.addEventListener('click', closePopup);
   overlay.addEventListener('click', closePopup);
 

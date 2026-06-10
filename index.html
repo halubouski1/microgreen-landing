@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <video class="hero__video" autoplay muted loop playsinline>
       <source src="assets/vid/hero-bg.mp4" type="video/mp4">
     </video>
@@ -29,19 +29,19 @@
           </a>
   
           <nav class="header__nav">
-            <a href="#" class="nav-link">Principale</a>
+            <a href="#hero" class="nav-link">Principale</a>
             <svg class="nav-sep" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="white"/></svg>
-            <a href="#" class="nav-link">Di noi</a>
+            <a href="#innovation" class="nav-link">Di noi</a>
             <svg class="nav-sep" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="white"/></svg>
-            <a href="#" class="nav-link">Tutti i prodotti</a>
+            <a href="#products" class="nav-link">Tutti i prodotti</a>
             <svg class="nav-sep" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="white"/></svg>
-            <a href="#" class="nav-link">Per chi</a>
+            <a href="#perchi" class="nav-link">Per chi</a>
             <svg class="nav-sep" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="white"/></svg>
-            <a href="#" class="nav-link">Per privati</a>
+            <a href="#wellness" class="nav-link">Per privati</a>
             <svg class="nav-sep" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="white"/></svg>
-            <a href="#" class="nav-link">Spedizione e pagamento</a>
+            <a href="#payment" class="nav-link">Spedizione e pagamento</a>
             <svg class="nav-sep" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="white"/></svg>
-            <a href="#" class="nav-link">Contatti</a>
+            <a href="#contatti" class="nav-link">Contatti</a>
           </nav>
   
           <div class="header__actions">
@@ -68,14 +68,14 @@
           <span class="hero__subtitle">Piccoli  dimensioni, giganti  nutrienti.</span>
           <h1 class="hero__title">Microgreen Piccoli Giganti di Civitanova Marche</h1>
           <div class="hero__btns">
-            <a href="#" class="btn-primary hero__btn-primary">
+            <a href="#" class="btn-primary hero__btn-primary js-consult-trigger">
               Scopri i Nostri Microgreen
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.1667 0.5V5.16667C11.1667 5.87391 10.8857 6.55219 10.3856 7.05229C9.88552 7.55238 9.20724 7.83333 8.5 7.83333H0.5" stroke="#0D4003" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M3.83333 4.5L0.5 7.83333L3.83333 11.1667" stroke="#0D4003" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
-            <a href="#" class="btn-secondary hero__btn-secondary">
+            <a href="#" class="btn-secondary hero__btn-secondary js-order-trigger">
               Ordina Ora
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.1667 0.5V5.16667C11.1667 5.87391 10.8857 6.55219 10.3856 7.05229C9.88552 7.55238 9.20724 7.83333 8.5 7.83333H0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -142,7 +142,7 @@
     </div>
   </section>
 
-  <section class="products" data-aos="fade-up" data-aos-duration="900">
+  <section class="products" data-aos="fade-up" data-aos-duration="900" id="products">
     <div class="products__header">
       <div class="products__label">
         <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +291,7 @@
     </div>
   </section>
 
-  <section class="perchi" data-aos="fade-up" data-aos-duration="900">
+  <section class="perchi" data-aos="fade-up" data-aos-duration="900" id="perchi">
     <div class="perchi__grid">
 
       <div class="perchi-card">
@@ -370,7 +370,7 @@
   </section>
 
   <!-- Wellness -->
-  <section class="wellness" data-aos="fade-up" data-aos-duration="900">
+  <section class="wellness" data-aos="fade-up" data-aos-duration="900" id="wellness">
     <div class="wellness__top">
       <div class="wellness__badge">
         <span class="wellness__badge-num">40</span>
@@ -380,7 +380,7 @@
     </div>
     <div class="wellness__bottom">
       <h2 class="wellness__title">Mangia Sano, Mangia Vivo. Scopri la Cultura del Benessere.</h2>
-      <a href="#" class="btn-primary wellness__btn">
+      <a href="#" class="btn-primary wellness__btn js-order-trigger">
         Ordina qui
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.1667 0.5V5.16667C11.1667 5.87391 10.8857 6.55219 10.3856 7.05229C9.88552 7.55238 9.20724 7.83333 8.5 7.83333H0.5" stroke="#0D4003" stroke-linecap="round" stroke-linejoin="round" />
@@ -391,7 +391,7 @@
   </section>
 
   <!-- Payment / Delivery -->
-  <section class="payment" data-aos="fade-up" data-aos-duration="900">
+  <section class="payment" data-aos="fade-up" data-aos-duration="900" id="payment">
 
     <div class="payment__left">
 
@@ -426,7 +426,7 @@
   </section>
 
   <!-- Freshness / Contact -->
-  <section class="freshness" data-aos="fade-up" data-aos-duration="900">
+  <section class="freshness" data-aos="fade-up" data-aos-duration="900" id="contatti">
 
     <div class="freshness__top">
       <p class="freshness__desc">Siamo a Civitanova Marche, pronti a farti scoprire il lato gigante della natura.<br>Contattaci via Whatsapp/Telegram per ottenere una BOX di vari assaggi gratuiti per scoprire i nostri prodotti.</p>
@@ -438,7 +438,7 @@
             <path d="M3.83333 4.5L0.5 7.83333L3.83333 11.1667" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="#" class="btn-secondary freshness__btn">
+        <a href="#" class="btn-secondary freshness__btn js-order-trigger">
           Ordina Ora con Consegna Gratuita
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.1667 0.5V5.16667C11.1667 5.87391 10.8857 6.55219 10.3856 7.05229C9.88552 7.55238 9.20724 7.83333 8.5 7.83333H0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -487,7 +487,7 @@
                 <path d="M3.83333 4.5L0.5 7.83333L3.83333 11.1667" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
-      <a href="#" class="mobile-cta__btn">
+      <a href="#" class="mobile-cta__btn js-order-trigger">
         <span>Ordina Ora con Consegna Gratuita</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.1667 0.5V5.16667C11.1667 5.87391 10.8857 6.55219 10.3856 7.05229C9.88552 7.55238 9.20724 7.83333 8.5 7.83333H0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -537,11 +537,11 @@
     <nav class="footer__mobile-nav">
       <span class="footer__mobile-nav-label">Navigazione</span>
       <div class="footer__mobile-nav-links">
-        <a href="#" class="footer__mobile-nav-link">Home</a>
-        <a href="#" class="footer__mobile-nav-link">Di Noi</a>
-        <a href="#" class="footer__mobile-nav-link">Directory</a>
-        <a href="#" class="footer__mobile-nav-link">Spedizione e Pagamento</a>
-        <a href="#" class="footer__mobile-nav-link">Contatti</a>
+        <a href="#hero" class="footer__mobile-nav-link">Home</a>
+        <a href="#innovation" class="footer__mobile-nav-link">Di Noi</a>
+        <a href="#products" class="footer__mobile-nav-link">Directory</a>
+        <a href="#payment" class="footer__mobile-nav-link">Spedizione e Pagamento</a>
+        <a href="#contatti" class="footer__mobile-nav-link">Contatti</a>
       </div>
     </nav>
 
@@ -560,11 +560,11 @@
       <nav class="footer__nav">
         <span class="footer__nav-label">Navigazione</span>
         <div class="footer__nav-links">
-          <a href="#" class="footer__nav-link">Home</a>
-          <a href="#" class="footer__nav-link">Di Noi</a>
-          <a href="#" class="footer__nav-link">Directory</a>
-          <a href="#" class="footer__nav-link">Spedizione e Pagamento</a>
-          <a href="#" class="footer__nav-link">Contatti</a>
+          <a href="#hero" class="footer__nav-link">Home</a>
+          <a href="#innovation" class="footer__nav-link">Di Noi</a>
+          <a href="#products" class="footer__nav-link">Directory</a>
+          <a href="#payment" class="footer__nav-link">Spedizione e Pagamento</a>
+          <a href="#contatti" class="footer__nav-link">Contatti</a>
         </div>
       </nav>
 
@@ -594,31 +594,31 @@
     <nav class="mob-menu__nav">
       <div class="mob-menu__item">
         <span class="mob-menu__num">01</span>
-        <a href="#" class="mob-menu__link">Principale</a>
+        <a href="#hero" class="mob-menu__link">Principale</a>
       </div>
       <div class="mob-menu__item">
         <span class="mob-menu__num">02</span>
-        <a href="#" class="mob-menu__link">Di noi</a>
+        <a href="#innovation" class="mob-menu__link">Di noi</a>
       </div>
       <div class="mob-menu__item">
         <span class="mob-menu__num">03</span>
-        <a href="#" class="mob-menu__link">Tutti i prodotti</a>
+        <a href="#products" class="mob-menu__link">Tutti i prodotti</a>
       </div>
       <div class="mob-menu__item">
         <span class="mob-menu__num">04</span>
-        <a href="#" class="mob-menu__link">Per chi</a>
+        <a href="#perchi" class="mob-menu__link">Per chi</a>
       </div>
       <div class="mob-menu__item">
         <span class="mob-menu__num">05</span>
-        <a href="#" class="mob-menu__link">Per privati</a>
+        <a href="#wellness" class="mob-menu__link">Per privati</a>
       </div>
       <div class="mob-menu__item">
         <span class="mob-menu__num">06</span>
-        <a href="#" class="mob-menu__link">Spedizione e pagamento</a>
+        <a href="#payment" class="mob-menu__link">Spedizione e pagamento</a>
       </div>
       <div class="mob-menu__item">
         <span class="mob-menu__num">07</span>
-        <a href="#" class="mob-menu__link">Contatti</a>
+        <a href="#contatti" class="mob-menu__link">Contatti</a>
       </div>
     </nav>
 
