@@ -150,7 +150,7 @@ document.querySelectorAll('.mob-menu__link').forEach(function(link) {
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.product-card__btn').forEach(function(btn) {
+  document.querySelectorAll('.product-card__btn, .hero__btn-secondary, .wellness__btn, .freshness__btn.js-order-trigger').forEach(function(btn) {
     btn.addEventListener('click', openPopup);
   });
   closeBtn.addEventListener('click', closePopup);
@@ -160,12 +160,20 @@ document.querySelectorAll('.mob-menu__link').forEach(function(link) {
     if (e.key === 'Escape') closePopup();
   });
 
-  document.querySelectorAll('.order-popup__method').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      document.querySelectorAll('.order-popup__method').forEach(function(b) {
-        b.classList.remove('order-popup__method--active');
-      });
-      btn.classList.add('order-popup__method--active');
+  document.querySelectorAll('.order-popup__item').forEach(function(item) {
+    var minusBtn = item.querySelector('.order-popup__step[data-dir="-1"]');
+    var plusBtn = item.querySelector('.order-popup__step[data-dir="1"]');
+    var qtyEl = item.querySelector('.order-popup__qty');
+    minusBtn.disabled = true;
+    plusBtn.addEventListener('click', function() {
+      var val = parseInt(qtyEl.textContent) + 1;
+      qtyEl.textContent = val;
+      minusBtn.disabled = false;
+    });
+    minusBtn.addEventListener('click', function() {
+      var val = Math.max(0, parseInt(qtyEl.textContent) - 1);
+      qtyEl.textContent = val;
+      minusBtn.disabled = val === 0;
     });
   });
 })();
@@ -175,7 +183,7 @@ document.querySelectorAll('.mob-menu__link').forEach(function(link) {
 // ========================================
 (function() {
   var popup = document.getElementById('consultPopup');
-  var triggers = document.querySelectorAll('.js-consult-trigger, .js-order-trigger');
+  var triggers = document.querySelectorAll('.js-consult-trigger, .js-order-trigger:not(.hero__btn-secondary):not(.wellness__btn):not(.freshness__btn)');
   var closeBtn = document.getElementById('consultClose');
   var overlay = document.getElementById('consultOverlay');
 

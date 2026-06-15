@@ -609,8 +609,9 @@
       margin-bottom: 15px;
   }
 
-  .order-popup__form, .order-popup__form-row {
-    gap: 10px;
+  .order-popup__data-row {
+    gap: 8px;
+    margin-bottom: 30px;
   }
 
   .order-popup__content {
@@ -619,51 +620,46 @@
   }
 
   .order-popup__input {
-    width: 100%;
-    font-size: 14px;
-    padding: 13px 15px;
+    font-size: 13px;
+    padding: 11px 13px;
   }
 
-  .order-popup__input::placeholder {
-    font-size: 14px;
+  .order-popup__items {
+    row-gap: 10px;
+    column-gap: 25px;
+    margin-bottom: 20px;
   }
 
-  .order-popup__form {
-    margin-bottom: 30px;
+  .order-popup__item {
+    padding: 10px 12px;
   }
 
-  .order-popup__methods {
-    gap: 10px;
-    margin-bottom: 40px;
+  .order-popup__item-name {
+    font-size: 13px;
+  }
+
+  .order-popup__stepper {
+    height: 26px;
+    gap: 1px;
+  }
+
+  .order-popup__item {
+    padding: 8px 10px;
+  }
+
+
+  .order-popup__qty {
+    font-size: 12px;
   }
 
   .order-popup__submit {
     font-size: 13px;
-    padding: 15px 15px 15px 20px;
+    padding: 15px 20px;
+    gap: 63px;
   }
 
-  .order-popup__method-text {
-    font-size: 13px;
-  }
-
-  .order-popup__method--bottom {
-    min-width: 180px;
-    height: 60px;
-    gap: 15px;
-  }
-
-  .order-popup__method--top {
-    min-width: 120px;
-    height: 50px;
-    min-height: 50px;
-  }
-
-  .order-popup__method--paypal svg {
-    width: 60px;
-  }
-
-  .order-popup__method--gpay svg {
-    width: 50px;
+  .order-popup__step {
+    font-size: 12px;
   }
 
   .order-popup__method--bonifico svg {
@@ -756,32 +752,17 @@
     margin-bottom: 40px;
   }
 
-  .order-popup__form {
-    margin-bottom: 40px;
-    max-width: 600px;
-  }
-
-  .order-popup__form-row {
+  .order-popup__data-row {
     flex-wrap: wrap;
-    gap: 10px;
   }
 
-  .order-popup__input--nome {
+  .order-popup__data-row .order-popup__input:first-child {
     flex: 0 0 100%;
   }
 
-  .order-popup__input--date {
-    flex: 1;
-  }
-
-  .order-popup__input--cvv {
-    flex: 1;
-    max-width: none;
-  }
-
-  .order-popup__methods {
+  .order-popup__items {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1369,7 +1350,7 @@
   .payment__bottom-desc {
     font-size: 13px;
     line-height: 164%;
-    max-width: 311px;
+    max-width: 281px;
   }
 
   .payment__card {
@@ -1580,7 +1561,7 @@
   }
 
   .order-popup__content {
-    padding: 80px 30px 80px 30px;
+    padding: 50px 30px 50px 30px;
   }
 
   .order-popup__method--bottom {
@@ -1590,22 +1571,12 @@
     gap: 4px;
   }
 
-  .order-popup__method-text {
-    font-size: 12px;
-    line-height: 100%;
-    max-width: 60px;
+  .order-popup__items {
+    grid-template-columns: 1fr;
   }
 
-  .order-popup__method--paypal svg {
-    width: 80px;
-  }
-
-  .order-popup__method--bottom svg {
-    width: 17px;
-  }
-
-  .order-popup__input--cvv {
-    max-width: 90px;
+  .order-popup__data-row {
+    flex-direction: column;
   }
 
     /* popup-consult */
