@@ -34,13 +34,13 @@
   }
 
   .mob-menu__logo {
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
   .mob-menu__logo svg {
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
   /* hero */
   .hero {
@@ -49,13 +49,13 @@
   }
 
   .header__logo {
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
   .header__logo svg{
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
   .nav-link {
@@ -287,8 +287,8 @@
   }
 
   .perchi-card__header-left svg {
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
   .perchi__grid {
@@ -431,12 +431,12 @@
 
   .payment__card-text {
     font-size: 12px;
-    max-width: 250px;
+    max-width: 175px;
   }
 
   .payment__card-logo svg {
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
   .payment__card-logo {
@@ -513,8 +513,8 @@
   }
 
   .freshness__logo svg {
-    width: 29px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
    .freshness__logo {
@@ -602,6 +602,7 @@
   .order-popup__title {
     font-size: 50px;
     margin-bottom: 20px;
+    max-width: 700px;
   }
 
   .order-popup__sublabel {
@@ -1034,7 +1035,7 @@
   }
 
   .header__logo {
-    padding-left: 7px;
+    margin-left: 7px;
   }
 
   .hero__btn-secondary {
@@ -1237,8 +1238,8 @@
   }
 
   .perchi-card__header-left svg {
-    width: 18px;
-    height: 15px;
+    width: 23px;
+    height: 23px;
   }
 
   .perchi-card__num {
@@ -1319,7 +1320,7 @@
   .payment__title {
     font-size: 28px;
     line-height: 111%;
-    max-width: 295px;
+    max-width: 321px;
     margin-bottom: 20px;
   }
 
@@ -1365,7 +1366,7 @@
 
   .payment__card-text {
     font-size: 13px;
-     max-width: 172px;
+    max-width: 180px;
   }
 
   .payment__badge {
@@ -1518,8 +1519,8 @@
   }
 
   .mob-menu__logo svg {
-    width: 22px;
-    height: 19px;
+    width: 33px;
+    height: 33px;
   }
 
   .mob-menu__top {
@@ -1546,7 +1547,7 @@
   }
 
   .order-popup__title {
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 30px;
   }
 

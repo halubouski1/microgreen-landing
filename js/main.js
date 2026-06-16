@@ -163,17 +163,41 @@ document.querySelectorAll('.mob-menu__link').forEach(function(link) {
   document.querySelectorAll('.order-popup__item').forEach(function(item) {
     var minusBtn = item.querySelector('.order-popup__step[data-dir="-1"]');
     var plusBtn = item.querySelector('.order-popup__step[data-dir="1"]');
-    var qtyEl = item.querySelector('.order-popup__qty');
-    minusBtn.disabled = true;
+    var qtyInput = item.querySelector('.order-popup__qty');
+
+    function getQty() {
+      return parseInt(qtyInput.value, 10) || 0;
+    }
+
+    function setQty(value) {
+      var qty = Math.max(0, value);
+      qtyInput.value = qty;
+      minusBtn.disabled = qty === 0;
+    }
+
+    setQty(getQty());
+
     plusBtn.addEventListener('click', function() {
-      var val = parseInt(qtyEl.textContent) + 1;
-      qtyEl.textContent = val;
-      minusBtn.disabled = false;
+      setQty(getQty() + 1);
     });
+
     minusBtn.addEventListener('click', function() {
-      var val = Math.max(0, parseInt(qtyEl.textContent) - 1);
-      qtyEl.textContent = val;
-      minusBtn.disabled = val === 0;
+      setQty(getQty() - 1);
+    });
+
+    qtyInput.addEventListener('focus', function() {
+      if (getQty() === 0) {
+        qtyInput.value = '';
+      }
+    });
+
+    qtyInput.addEventListener('input', function() {
+      qtyInput.value = qtyInput.value.replace(/\D/g, '').replace(/^0+(?=\d)/, '');
+      minusBtn.disabled = getQty() === 0;
+    });
+
+    qtyInput.addEventListener('blur', function() {
+      setQty(getQty());
     });
   });
 })();

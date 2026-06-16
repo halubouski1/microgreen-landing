@@ -866,7 +866,7 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 657px;
+  max-width: 670px;
   margin-bottom: 30px;
 }
 
@@ -1162,7 +1162,7 @@ button {
 
 .order-popup__title {
   font-weight: 400;
-  font-size: 70px;
+  font-size: 64px;
   line-height: 93%;
   background: linear-gradient(360deg, #6e8d65 0%, #20271c 100%);
   background-clip: text;
@@ -1281,13 +1281,17 @@ button {
 }
 
 .order-popup__qty {
+  width: 28px;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   color: #bcbcbc;
-  min-width: 16px;
   text-align: center;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
 }
 
 .order-popup__submit {
