@@ -1329,6 +1329,11 @@
     max-width: 301px;
   }
 
+  .payment__card-logo svg {
+    width: 25px;
+    height: 25px;
+  }
+
   .payment__left-bottom {
     padding: 15px;
     padding-bottom: 20px;
@@ -1366,7 +1371,7 @@
 
   .payment__card-text {
     font-size: 13px;
-    max-width: 196px;
+    max-width: 211px;
   }
 
   .payment__badge {
