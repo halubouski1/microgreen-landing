@@ -233,11 +233,13 @@ document.querySelectorAll('.mob-menu__link').forEach(function(link) {
   });
 })();
 
+var ANCHOR_SCROLL_OFFSET = 100;
+
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   anchor.addEventListener('click', function(e) {
     var target = anchor.getAttribute('href');
     if (target === '#') return;
     e.preventDefault();
-    lenis.scrollTo(target);
+    lenis.scrollTo(target, { offset: -ANCHOR_SCROLL_OFFSET });
   });
 });
