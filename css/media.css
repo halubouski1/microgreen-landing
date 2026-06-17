@@ -386,8 +386,8 @@
 
   .payment__title {
     font-size: 50px;
-    max-width: 576px;
-    margin-bottom: 20px;
+    max-width: 583px;
+    margin-bottom: 10px;
   }
 
   .payment__subtitle {
@@ -695,6 +695,29 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .order-popup__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order-popup__data-row {
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .order-popup__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    max-width: 538px;
+  }
+
+  .order-popup__input {
+    min-width: 200px;
+    flex: none;
+  }
+}
+
 @media (max-width: 1210px) {
   .innovation__right {
     height: stretch;
@@ -738,6 +761,10 @@
     opacity: 1;
     transform: none;
   }
+
+    .order-popup__input {
+      flex: 1;
+    }
 
   .order-popup__close {
     top: 25px;
@@ -1318,10 +1345,10 @@
   }
 
   .payment__title {
-    font-size: 28px;
+    font-size: 27px;
     line-height: 111%;
     max-width: 321px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .payment__subtitle {

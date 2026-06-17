@@ -866,8 +866,9 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 670px;
-  margin-bottom: 30px;
+  max-width: 701px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .payment__subtitle {
@@ -1162,7 +1163,8 @@ button {
 
 .order-popup__title {
   font-weight: 400;
-  font-size: 64px;
+  font-size: 60px;
+  max-width: 722px;
   line-height: 93%;
   background: linear-gradient(360deg, #6e8d65 0%, #20271c 100%);
   background-clip: text;
@@ -1186,6 +1188,8 @@ button {
   display: flex;
   gap: 10px;
   margin-bottom: 40px;
+  flex-direction: column;
+    max-width: 400px;
 }
 
 .order-popup__input {
@@ -1224,7 +1228,7 @@ button {
   gap: 30px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 7px;
-  padding: 6px 9px 6px 64px;
+  padding: 6px 9px 6px 40px;
   background: #f9f9f9;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
