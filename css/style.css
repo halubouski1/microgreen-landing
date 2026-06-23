@@ -1517,6 +1517,12 @@ button {
   align-items: flex-start;
 }
 
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .footer__emails {
   display: flex;
   flex-direction: column;
@@ -1542,6 +1548,31 @@ button {
   line-height: 111%;
   color: #95979f;
   color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  transition: opacity 0.2s;
+}
+
+.footer__social-link:hover {
+  opacity: 0.75;
+}
+
+.footer__social-link svg {
+  display: block;
 }
 
 .footer__contacts {

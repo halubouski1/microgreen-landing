@@ -588,6 +588,20 @@
     font-size: 12px;
   }
 
+  .footer__social-link {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer__social-link svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .footer__socials {
+    gap: 10px;
+  }
+
   /* popup-order */
   .order-popup__close svg {
     width: 20px;
@@ -1538,6 +1552,10 @@
     font-size: 13px;
     text-underline-offset: 6px;
     padding-bottom: 6px;
+  }
+
+  .footer__left {
+    gap: 60px;
   }
 
   /* mob-menu */
