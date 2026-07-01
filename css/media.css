@@ -1,4 +1,11 @@
 @media (max-width: 1919px) {
+  .header {
+    top: 30px;
+    padding: 0 40px;
+  }
+
+  /* mob menu */
+
   .mob-menu__link {
     font-size: 50px;
   }
@@ -1031,6 +1038,11 @@
 }
 
 @media (max-width: 570px) {
+  .header {
+    top: 20px;
+    padding: 0 20px;
+  }
+
   .hero {
     margin: 7px;
     height: calc(var(--fixed-vh, 100vh) - 14px);
